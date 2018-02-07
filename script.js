@@ -40,8 +40,6 @@ card.click(function(){
   $(this).toggleClass("open");
   // console.log(clicked);
   checkCards();
-
-
 })//card click
 
 
@@ -52,6 +50,8 @@ compareCards.push(clicked);
 console.log(compareCards);
 if(compareCards.length === 2){
   if(compareCards[0].getAttribute("data-type") === compareCards[1].getAttribute("data-type")){
+      compareCards[0].style.visibility ="hidden";
+      compareCards[1].style.visibility ="hidden";
       console.log("same");
       console.log(compareCards);
       compareCards =[];
