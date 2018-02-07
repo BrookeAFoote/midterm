@@ -4,23 +4,28 @@
   box-sizing: border-box;
 }
  body {
-   background-color: #f49fc4;
+  background-repeat: no-repeat;
+  background-image: url("images/pencil.jpg");
+  background-size: cover;
  }
 .cardContainer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   height: auto;
-  width: 80%;
-  border: 1px solid black;
-  background-image: url("brush.jpg");  
+  width: 80%; 
 }
 
 .card {
   height: 175px;
   width: 20%;
   border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px #f49fc4;
   margin: 10px;
   text-align: center;
+  background-image: url("images/brush.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
