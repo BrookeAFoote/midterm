@@ -8,10 +8,19 @@
     <title></title>
   </head>
   <body>
+
     <header>
       <h1>Match Game</h1>
       <div class="timer"></div>
     </header>
+    <div class="nameContainer">
+      <div class="btn">
+      <button id="startButton" type="button" name="button">START</button>
+      <h2 id="userName">NAME</h2>
+      <button id="resetButton" type="button" name="button">RESET</button>
+      </div>
+      <h3 id="pointTotal">Clicks: 0</h3> <!--placeholder-->
+    </div>
     <div class="cardContainer">
       <div data-type ="type1" class="card card1 noClick">
 
@@ -74,16 +83,9 @@
         <div class= "randomImage bottom">6</div>
       </div>
     </div>
-    <div class="nameContainer">
-      <div class="btn">
-      <button id="startButton" type="button" name="button">START</button>
-      <h2 id="userName">NAME</h2>
-      <button id="resetButton" type="button" name="button">RESET</button>
-      </div>
-      <p id="pointTotal">1000pts</p> <!--placeholder-->
-    </div>
 
-  <script type="text/javascript" src="jquery-3.3.1.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
