@@ -45,8 +45,8 @@ card.click(function(){
   counter++;
   clicked = $(this);
   // console.log(counter);
-  $(".top",this).toggle();
-  $(".bottom",this).toggle();
+  $(".top",this).hide();
+  $(".bottom",this).show();
   $(this).toggleClass("open");
   // console.log(clicked);
   checkCards();
@@ -68,26 +68,17 @@ if(compareCards.length === 2){
     console.log("not the same");
     console.log(compareCards);
     card.removeClass("noClick");
-    compareCards =[];
-  }
+    // $(".top").show().delay(400);
+    // $(".bottom").hide().delay(400);
 
+  }
 }
+
 
 };
 
 
-// function checkCards(){
-//   compareCards.push(clicked);
-//   console.log(compareCards);
-// if (compareCards.length === 2){
-//   if (compareCards[0].attr("type") === compareCards[0].attr("type"){
-//
-    compareCards =[];
-//     console.log(compareCards);
-//   }
-// }
-//
-// }//checkCards
+
 
 
 
