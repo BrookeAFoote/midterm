@@ -12,10 +12,10 @@
   background-origin: content-box;
   background-attachment: fixed;
   background-position: center;
+  font-family: 'Rubik Mono One', sans-serif;
  }
 
  h1 {
-  font-family: 'Rubik Mono One', sans-serif;
   color: rgba(0,0,0,0.1);
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
   -webkit-text-stroke-width: 1px;
@@ -50,14 +50,29 @@
 }
 
 .btn {
-  /* display: inline; */
   display: flex;
   justify-content: space-between;
   padding: 5px 10px 0px 10px;
 }
 
-#reset {
-  margin-right: 10px;
+#resetButton {
+  padding: 5px;
+  background-color: #ec9b63;
+  border-radius: 10px;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+#startButton {
+  padding: 5px;
+  background-color: #f49fc4;
+  border-radius: 10px;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+#userName {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: rgba(0,0,0,0.1);
 }
 
 
