@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
 // variables
-var card = $(".card");
+var allCards = $(".card");
 var cardDeck = $(".cardContainer");
-var cardArray = [...card];
+var cardArray = [...allCards];
 var startButton = $("#startButton");
 var resetButton = $("#resetButton")
 var counter = 0;
@@ -28,12 +28,15 @@ startButton.click(function(){
   cardArray.forEach(function(card){
     cardDeck.append(card);
   })
-  card.removeClass("noClick");
+  allCards.removeClass("noClick");
+  playStartSound();
 })
 
+
+
 resetButton.click(function(){
-  card.css("visibility","visible");
-  card.removeClass("flipped");
+  allCards.css("visibility","visible");
+  allCards.removeClass("flipped");
   cardShuffle();
   cardArray.forEach(function(card){
     cardDeck.append(card);
@@ -41,40 +44,46 @@ resetButton.click(function(){
 })
 
  //on click flip card over to reveal image
-card.click(function(){
+allCards.click(function(){
   counter++;
   clicked = $(this);
   clicked.toggleClass("flipped");
-  $(this).toggleClass("open");
+  // $(this).toggleClass("open");
   checkCards();
 })//card click
 
 function checkCards(){
-compareCards.push(clicked);
-clicked.addClass("noClick");
-console.log(compareCards);
-if(compareCards.length === 2){
-  if(compareCards[0].attr("data-type") === compareCards[1].attr("data-type")){
-      compareCards[0].css("visibility","hidden");
-      compareCards[1].css("visibility","hidden");
-      console.log("same");
+  compareCards.push(clicked);
+  clicked.addClass("noClick");
+  console.log(compareCards);
+  if(compareCards.length === 2){
+    if(compareCards[0].attr("data-type") === compareCards[1].attr("data-type")){
+      setTimeout(function(){ })
+        compareCards[0].css("visibility","hidden");
+        compareCards[1].css("visibility","hidden");
+        console.log("same");
+        console.log(compareCards);
+        allCards.removeClass("noClick");
+        compareCards =[];
+    } else{
+      console.log("not the same");
       console.log(compareCards);
-      card.removeClass("noClick");
+      allCards.removeClass("noClick");
       compareCards =[];
-  } else{
-    console.log("not the same");
-    console.log(compareCards);
-    card.removeClass("noClick");
-    compareCards =[];
-    // card.removeClass("flipped",800);
+      setTimeout(function(){
+        allCards.removeClass("flipped");
+      },3000);
+      };//else
 
-  }
-}
-
-
+  };
 };
 
+function playStartSound() {
 
+}
+function playFlipSound() {
+
+}
 
 
 
