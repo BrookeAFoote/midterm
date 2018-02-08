@@ -5,6 +5,7 @@ var card = $(".card");
 var cardDeck = $(".cardContainer");
 var cardArray = [...card];
 var startButton = $("#startButton");
+var resetButton = $("#resetButton")
 var counter = 0;
 var openCards = $(".open");
 var compareCards= [];
@@ -27,13 +28,21 @@ startButton.click(function(){
   cardArray.forEach(function(card){
     cardDeck.append(card);
   })
+  card.removeClass("noClick");
 })
 
+resetButton.click(function(){
+  location.reload();
+  cardShuffle();
+  cardArray.forEach(function(card){
+    cardDeck.append(card);
+  })
+})
 
  //on click flip card over to reveal image
 card.click(function(){
   counter++;
-  clicked = this;
+  clicked = $(this);
   // console.log(counter);
   $(".top",this).toggle();
   $(".bottom",this).toggle();
@@ -42,22 +51,22 @@ card.click(function(){
   checkCards();
 })//card click
 
-
-
-
 function checkCards(){
 compareCards.push(clicked);
+clicked.addClass("noClick");
 console.log(compareCards);
 if(compareCards.length === 2){
-  if(compareCards[0].getAttribute("data-type") === compareCards[1].getAttribute("data-type")){
-      compareCards[0].style.visibility ="hidden";
-      compareCards[1].style.visibility ="hidden";
+  if(compareCards[0].attr("data-type") === compareCards[1].attr("data-type")){
+      compareCards[0].css("visibility","hidden");
+      compareCards[1].css("visibility","hidden");
       console.log("same");
       console.log(compareCards);
+      card.removeClass("noClick");
       compareCards =[];
   } else{
     console.log("not the same");
     console.log(compareCards);
+    card.removeClass("noClick");
     compareCards =[];
   }
 

@@ -23,7 +23,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   height: auto;
-  width: 80%; 
+  width: 80%;
 
 }
 
@@ -42,4 +42,8 @@
 
 .bottom {
   display: none;
+}
+
+.noClick {
+  pointer-events: none;
 }
