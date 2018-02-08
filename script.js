@@ -32,7 +32,8 @@ startButton.click(function(){
 })
 
 resetButton.click(function(){
-  location.reload();
+  // card.reload();
+  card.css("visibility","visible");
   cardShuffle();
   cardArray.forEach(function(card){
     cardDeck.append(card);
