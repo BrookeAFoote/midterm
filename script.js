@@ -87,8 +87,8 @@ function checkCards(){
 };
 
 function playStartSound() {
-  var audio = new Audio("audio/welcome.mp3");
-  audio.play();
+ var audio = new Audio("audio/drumstick.mp3");
+ audio.play();
 }
 
 function playFlipSound() {
@@ -107,12 +107,12 @@ function playWinSound() {
 }
 
 function playMatchSound() {
-  var keyboard = new Audio("audio/.mp3");
+  var keyboard = new Audio("audio/piano.mp3");
   keyboard.play();
 }
 
 function playNoMatch() {
-  var note = new Audio("audio/.mp3")
+  var note = new Audio("audio/scratch.mp3")
   note.play();
 }
 
