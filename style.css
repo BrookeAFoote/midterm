@@ -49,6 +49,17 @@
   border-top: 2px ridge #ec9b63;
 }
 
+.btn {
+  /* display: inline; */
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px 0px 10px;
+}
+
+#reset {
+  margin-right: 10px;
+}
+
 
 .bottom {
   display: none;
