@@ -51,6 +51,7 @@ allCards.click(function(){
   clicked.toggleClass("flipped");
   // $(this).toggleClass("open");
   checkCards();
+  playFlipSound();
 })//card click
 
 function checkCards(){
@@ -68,6 +69,7 @@ function checkCards(){
         allCards.removeClass("noClick");
         compareCards =[];
       }, 3000);
+      playMatchSound();
     } else{
       console.log("not the same");
       console.log(compareCards);
@@ -78,6 +80,7 @@ function checkCards(){
         allCards.removeClass("flipped");
         allCards.removeClass("noClick");
       },3000);
+      playNoMatch();
       };//else
 
   };
@@ -87,13 +90,30 @@ function playStartSound() {
  var audio = new Audio("audio/drumstick.mp3");
  audio.play();
 }
-function playFlipSound() {
 
+function playFlipSound() {
+  var drum = new Audio("audio/drumstick.mp3");
+  drum.play();
 }
- 
-function playResetSound () {
+
+function playResetSound() {
   var amp = new Audio("audio/amp.mp3");
   amp.play();
+}
+
+function playWinSound() {
+  var guitar = new Audio("audio/win.mp3");
+  guitar.play();
+}
+
+function playMatchSound() {
+  var keyboard = new Audio("audio/piano.mp3");
+  keyboard.play();
+}
+
+function playNoMatch() {
+  var note = new Audio("audio/scratch.mp3")
+  note.play();
 }
 
 
