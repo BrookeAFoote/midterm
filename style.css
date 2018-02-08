@@ -35,8 +35,12 @@
   justify-content: space-around;
   flex-wrap: wrap;
   height: auto;
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
+  background-color: #a6d6d2;
+  padding: 10px;
+  border: 1px outset #183e98;
+  border-radius: 10px;
   /* max-width: 900px; */
 }
 
@@ -173,4 +177,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media only screen and (max-width: 849px) {
+  .card {
+    /* height: 120px; */
+  }
+  .cardContainer {
+    width: 100%;
+  }
+  h1,h2{
+    font-size: 1em;
+    text-align: center;
+  }
 }
