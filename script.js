@@ -66,6 +66,7 @@ if(compareCards.length === 2){
     console.log(compareCards);
     card.removeClass("noClick");
     compareCards =[];
+    // card.removeClass("flipped",800);
 
   }
 }
