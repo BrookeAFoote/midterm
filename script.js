@@ -58,6 +58,7 @@ function checkCards(){
   console.log(compareCards);
   if(compareCards.length === 2){
     if(compareCards[0].attr("data-type") === compareCards[1].attr("data-type")){
+      allCards.addClass("noClick");
       setTimeout(function(){
         compareCards[0].css("visibility","hidden");
         compareCards[1].css("visibility","hidden");
