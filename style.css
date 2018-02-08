@@ -69,6 +69,12 @@
   font-family: 'Rubik Mono One', sans-serif;
 }
 
+#userName {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: rgba(0,0,0,0.1);
+}
+
 
 .bottom {
   display: none;
