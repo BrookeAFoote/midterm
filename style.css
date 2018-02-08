@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
  body {
-  background-repeat: no-repeat;
   background-image: url("images/pencil.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-origin: content-box;
   background-attachment: fixed;
