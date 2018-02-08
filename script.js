@@ -58,13 +58,14 @@ function checkCards(){
   console.log(compareCards);
   if(compareCards.length === 2){
     if(compareCards[0].attr("data-type") === compareCards[1].attr("data-type")){
-      setTimeout(function(){ })
+      setTimeout(function(){
         compareCards[0].css("visibility","hidden");
         compareCards[1].css("visibility","hidden");
         console.log("same");
         console.log(compareCards);
         allCards.removeClass("noClick");
         compareCards =[];
+      }, 3000);
     } else{
       console.log("not the same");
       console.log(compareCards);
