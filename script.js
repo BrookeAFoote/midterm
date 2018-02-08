@@ -45,8 +45,8 @@ card.click(function(){
   counter++;
   clicked = $(this);
   // console.log(counter);
-  $(".top",this).hide();
-  $(".bottom",this).show();
+  $(".top",this).toggle();
+  $(".bottom",this).toggle();
   $(this).toggleClass("open");
   // console.log(clicked);
   checkCards();
@@ -68,8 +68,7 @@ if(compareCards.length === 2){
     console.log("not the same");
     console.log(compareCards);
     card.removeClass("noClick");
-    // $(".top").show().delay(400);
-    // $(".bottom").hide().delay(400);
+    compareCards =[];
 
   }
 }
