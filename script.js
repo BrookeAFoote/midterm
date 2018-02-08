@@ -11,6 +11,7 @@ var openCards = $(".open");
 var compareCards= [];
 var clicked;
 var wins= 0;
+
 //randomly shuffle cards
 function cardShuffle(){
 var input = cardArray;
@@ -42,12 +43,15 @@ resetButton.click(function(){
   cardArray.forEach(function(card){
     cardDeck.append(card);
   })
+
   playResetSound ();
 })
 
  //on click flip card over to reveal image
 allCards.click(function(){
   counter++;
+  $(".clicks").text(counter);
+  console.log(counter);
   clicked = $(this);
   clicked.toggleClass("flipped");
   // $(this).toggleClass("open");
