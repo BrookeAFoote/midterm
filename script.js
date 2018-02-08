@@ -34,6 +34,7 @@ startButton.click(function(){
 resetButton.click(function(){
   // card.reload();
   card.css("visibility","visible");
+  card.removeClass("flipped");
   cardShuffle();
   cardArray.forEach(function(card){
     cardDeck.append(card);
@@ -45,8 +46,8 @@ card.click(function(){
   counter++;
   clicked = $(this);
   // console.log(counter);
-  $(".top",this).toggle();
-  $(".bottom",this).toggle();
+  // $(".top",this).toggle();
+  // $(".bottom",this).toggle();
   clicked.toggleClass("flipped");
   $(this).toggleClass("open");
   // console.log(clicked);
