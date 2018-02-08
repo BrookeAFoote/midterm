@@ -71,8 +71,10 @@ function checkCards(){
       console.log(compareCards);
       allCards.removeClass("noClick");
       compareCards =[];
+      allCards.addClass("noClick");
       setTimeout(function(){
         allCards.removeClass("flipped");
+        allCards.removeClass("noClick");
       },3000);
       };//else
 
