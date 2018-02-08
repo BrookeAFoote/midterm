@@ -43,6 +43,12 @@
   /* background-image: url("images/brush.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+
+}
+
+.card div {
+  backface-visibility: hidden;
+  position: absolute;
 }
 
 .nameContainer{
@@ -75,6 +81,11 @@
 
 .bottom {
   display: none;
+  transform: rotateY(180deg);
+}
+
+.flipped {
+  transform: rotateY(180deg);
 }
 
 .noClick {
