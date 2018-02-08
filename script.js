@@ -41,6 +41,7 @@ resetButton.click(function(){
   cardArray.forEach(function(card){
     cardDeck.append(card);
   })
+  playResetSound ();
 })
 
  //on click flip card over to reveal image
@@ -89,7 +90,11 @@ function playStartSound() {
 function playFlipSound() {
 
 }
-
+ 
+function playResetSound () {
+  var amp = new Audio("audio/amp.mp3");
+  amp.play();
+}
 
 
 
