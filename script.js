@@ -47,6 +47,7 @@ card.click(function(){
   // console.log(counter);
   $(".top",this).toggle();
   $(".bottom",this).toggle();
+  clicked.toggleClass("flipped");
   $(this).toggleClass("open");
   // console.log(clicked);
   checkCards();
