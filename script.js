@@ -83,7 +83,8 @@ function checkCards(){
 };
 
 function playStartSound() {
-
+ var audio = new Audio("audio/welcome.mp3");
+ audio.play();
 }
 function playFlipSound() {
 
