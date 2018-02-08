@@ -9,6 +9,9 @@
   background-repeat: no-repeat;
   background-image: url("images/pencil.jpg");
   background-size: cover;
+  background-origin: content-box;
+  background-attachment: fixed;
+  background-position: center;
  }
 
  h1 {
@@ -17,19 +20,22 @@
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
+   text-align: center;
  }
 .cardContainer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   height: auto;
-  width: 80%;
-
+  width: 75%;
+  margin: 0 auto;
 }
 
 .card {
   height: 175px;
   width: 20%;
+  max-width: 170px;
+  min-width: 150px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #f49fc4;
   margin: 10px;
