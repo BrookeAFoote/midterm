@@ -32,8 +32,8 @@ startButton.click(function(){
 })
 
 resetButton.click(function(){
-  // card.reload();
   card.css("visibility","visible");
+  card.removeClass("flipped");
   cardShuffle();
   cardArray.forEach(function(card){
     cardDeck.append(card);
@@ -44,12 +44,8 @@ resetButton.click(function(){
 card.click(function(){
   counter++;
   clicked = $(this);
-  // console.log(counter);
-  $(".top",this).toggle();
-  $(".bottom",this).toggle();
   clicked.toggleClass("flipped");
   $(this).toggleClass("open");
-  // console.log(clicked);
   checkCards();
 })//card click
 
@@ -70,6 +66,7 @@ if(compareCards.length === 2){
     console.log(compareCards);
     card.removeClass("noClick");
     compareCards =[];
+    // card.removeClass("flipped",800);
 
   }
 }
