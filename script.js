@@ -92,7 +92,7 @@ function playStartSound() {
 }
 
 function playFlipSound() {
-  var drum = new Audio("audio/.mp3");
+  var drum = new Audio("audio/drumstick.mp3");
   drum.play();
 }
 
@@ -102,7 +102,7 @@ function playResetSound() {
 }
 
 function playWinSound() {
-  var guitar = new Audio("audio/.mp3");
+  var guitar = new Audio("audio/win.mp3");
   guitar.play();
 }
 
