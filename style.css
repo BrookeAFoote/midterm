@@ -24,15 +24,14 @@
  }
 .cardContainer {
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-around;
   flex-wrap: wrap;
   height: auto;
-  width: 75%;
+  width: 60%;
   margin: 0 auto;
 }
 
 .card {
-  flex: 1;
   height: 175px;
   width: 20%;
   max-width: 170px;
@@ -44,6 +43,10 @@
   background-image: url("images/brush.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.nameContainer{
+  border-top: 2px ridge #ec9b63;
 }
 
 
