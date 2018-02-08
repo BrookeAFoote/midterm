@@ -10,7 +10,7 @@ var counter = 0;
 var openCards = $(".open");
 var compareCards= [];
 var clicked;
-
+var wins= 0;
 //randomly shuffle cards
 function cardShuffle(){
 var input = cardArray;
@@ -37,6 +37,7 @@ startButton.click(function(){
 resetButton.click(function(){
   allCards.css("visibility","visible");
   allCards.removeClass("flipped");
+  $(".winner").hide();
   cardShuffle();
   cardArray.forEach(function(card){
     cardDeck.append(card);
@@ -57,22 +58,25 @@ allCards.click(function(){
 function checkCards(){
   compareCards.push(clicked);
   clicked.addClass("noClick");
-  console.log(compareCards);
+
   if(compareCards.length === 2){
     if(compareCards[0].attr("data-type") === compareCards[1].attr("data-type")){
       allCards.addClass("noClick");
       setTimeout(function(){
         compareCards[0].css("visibility","hidden");
         compareCards[1].css("visibility","hidden");
+        wins++
+        winTest();
         console.log("same");
-        console.log(compareCards);
+        console.log(wins);
         allCards.removeClass("noClick");
         compareCards =[];
       }, 3000);
       playMatchSound();
+
     } else{
       console.log("not the same");
-      console.log(compareCards);
+
       allCards.removeClass("noClick");
       compareCards =[];
       allCards.addClass("noClick");
@@ -81,10 +85,21 @@ function checkCards(){
         allCards.removeClass("noClick");
       },3000);
       playNoMatch();
+
       };//else
 
   };
+
 };
+
+function winTest(){
+  if(wins === 6){
+    cardDeck.html("<h1 class='winner'> YOU WIN! </h1>");
+    console.log("you win");
+    playWinSound()
+    wins =0;
+  };
+}
 
 function playStartSound() {
  var audio = new Audio("audio/drumstick.mp3");
