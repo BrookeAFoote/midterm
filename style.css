@@ -75,7 +75,7 @@
 .btn {
   display: flex;
   justify-content: space-between;
-  padding: 5px 10px 0px 10px;
+  padding: 15px 10px 0px 10px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   color: rgba(0,0,0,0.1);
@@ -93,17 +93,19 @@
 }
 
 #resetButton {
-  padding: 5px;
+  padding: 15px 30px;
   background-color: #ec9b63;
   border-radius: 10px;
   font-family: 'Rubik Mono One', sans-serif;
+  font-size: 25px;
 }
 
 #startButton {
-  padding: 5px;
+  padding: 15px 30px;
   background-color: #f49fc4;
   border-radius: 10px;
   font-family: 'Rubik Mono One', sans-serif;
+  font-size: 25px;
 }
 
 .bottom {
