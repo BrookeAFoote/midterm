@@ -84,7 +84,7 @@ function checkCards(){
 };
 
 function playStartSound() {
- var audio = new Audio("audio/welcome.mp3");
+ var audio = new Audio("audio/drumstick.mp3");
  audio.play();
 }
 function playFlipSound() {
