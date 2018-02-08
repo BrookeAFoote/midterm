@@ -40,7 +40,7 @@
   box-shadow: 5px 5px 10px #f49fc4;
   margin: 10px;
   text-align: center;
-  background-image: url("images/brush.jpg");
+  /* background-image: url("images/brush.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -56,4 +56,9 @@
 
 .noClick {
   pointer-events: none;
+}
+
+.randomImage {
+  max-width: 100%;
+  max-height: 100%;
 }
