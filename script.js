@@ -38,6 +38,7 @@ startButton.click(function(){
 resetButton.click(function(){
   allCards.css("visibility","visible");
   allCards.removeClass("flipped");
+  allCards.removeClass("noClick")
   counter = 0;
   $(".clicks").text(counter);
   $(".winner").hide();
