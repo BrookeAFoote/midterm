@@ -38,6 +38,8 @@ startButton.click(function(){
 resetButton.click(function(){
   allCards.css("visibility","visible");
   allCards.removeClass("flipped");
+  counter = 0;
+  $(".clicks").text(counter);
   $(".winner").hide();
   cardShuffle();
   cardArray.forEach(function(card){
