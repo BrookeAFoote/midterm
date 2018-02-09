@@ -146,7 +146,7 @@
 .card1,.card2{
   background-image: url("images/austin2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 175px 170px;
   background-position: center;
 }
 
@@ -160,28 +160,28 @@
 .card5,.card6{
   background-image: url("images/drums2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 175px 170px;
   background-position: center;
 }
 
 .card7,.card8{
   background-image: url("images/guitar2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 175px 170px;
   background-position: center;
 }
 
 .card9,.card10{
   background-image: url("images/keyboard2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 175px 170px;
   background-position: center;
 }
 
 .card11,.card12{
   background-image: url("images/microphone2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 175px 170px;
   background-position: center;
 }
 
