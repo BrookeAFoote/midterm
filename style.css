@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
  body {
-  background-image: url("images/pencil.jpg");
+  /* background-image: url("images/pencil.jpg"); */
+  background-color: #a6d6d2;
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: content-box;

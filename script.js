@@ -41,6 +41,7 @@ resetButton.click(function(){
   allCards.removeClass("flipped");
   allCards.removeClass("noClick")
   counter = 0;
+  wins=0;
   $(".clicks").text(counter);
   $(".winner").remove();
   cardShuffle();
