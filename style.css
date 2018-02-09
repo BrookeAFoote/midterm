@@ -37,6 +37,9 @@
   height: auto;
   width: 60%;
   margin: 0 auto;
+  background-color: #a6d6d2;
+  padding: 10px;
+  border: 1px outset #183e98;
   /* max-width: 900px; */
 }
 
