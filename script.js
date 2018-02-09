@@ -108,7 +108,7 @@ function winTest(){
 }
 
 function playStartSound() {
- var audio = new Audio("audio/drumstick.mp3");
+ var audio = new Audio("audio/cymbal.mp3");
  audio.play();
 }
 
