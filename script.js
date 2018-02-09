@@ -36,12 +36,13 @@ startButton.click(function(){
 
 
 resetButton.click(function(){
+  $(".title").text("Memory Game");
   allCards.css("visibility","visible");
   allCards.removeClass("flipped");
   allCards.removeClass("noClick")
   counter = 0;
   $(".clicks").text(counter);
-  $(".winner").hide();
+  $(".winner").remove();
   cardShuffle();
   cardArray.forEach(function(card){
     cardDeck.append(card);
@@ -56,8 +57,7 @@ allCards.click(function(){
   $(".clicks").text(counter);
   console.log(counter);
   clicked = $(this);
-  clicked.toggleClass("flipped");
-  // $(this).toggleClass("open");
+  clicked.addClass("flipped");
   checkCards();
   playFlipSound();
 })//card click
@@ -84,7 +84,7 @@ function checkCards(){
     } else{
       console.log("not the same");
 
-      allCards.removeClass("noClick");
+      // allCards.removeClass("noClick");
       compareCards =[];
       allCards.addClass("noClick");
       setTimeout(function(){
@@ -101,11 +101,11 @@ function checkCards(){
 
 function winTest(){
   if(wins === 6){
-    cardDeck.html("<h1 class='winner'> YOU WIN! </h1>");
+    $(".title").text("YOU WIN!");
     console.log("you win");
     playWinSound()
     wins =0;
-  };
+  } else {console.log("test");}
 }
 
 function playStartSound() {
