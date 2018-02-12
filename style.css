@@ -178,8 +178,9 @@
 
 .card7,.card8{
   background-image: url("images/guitar2.jpg");
+  background-color: #ec9b63;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 175px 170px;
   background-position: center;
 }
 
