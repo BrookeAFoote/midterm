@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
  body {
-  /* background-image: url("images/pencil.jpg"); */
+  background-image: url("images/pencil.jpg");
   background-color: #a6d6d2;
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,11 +73,11 @@
 .card div {
   backface-visibility: hidden;
   position: absolute;
-  /* transform-style: preserve-3d; */
+  transform-style: preserve-3d;
 }
 
 
-/* .btn {
+.btn {
   display: flex;
   justify-content: space-between;
   padding: 15px 10px 0px 10px;
@@ -86,7 +86,7 @@
   color: rgba(0,0,0,0.1);
   font-family: 'Rubik Mono One', sans-serif;
   max-width: 100%;
-} */
+}
 
 .nameContainer {
   border-top: 2px ridge #ec9b63;
@@ -158,6 +158,7 @@
   background-repeat: no-repeat;
   background-size: 175px 170px;
   background-position: center;
+  background-color: #ec9b63;
 }
 
 .card3,.card4{
@@ -172,12 +173,13 @@
   background-repeat: no-repeat;
   background-size: 175px 170px;
   background-position: center;
+  background-color: #ec9b63;
 }
 
 .card7,.card8{
   background-image: url("images/guitar2.jpg");
   background-repeat: no-repeat;
-  background-size: 175px 170px;
+  background-size: cover;
   background-position: center;
 }
 
@@ -186,6 +188,7 @@
   background-repeat: no-repeat;
   background-size: 175px 170px;
   background-position: center;
+  background-color: #ec9b63;
 }
 
 .card11,.card12{
@@ -193,6 +196,7 @@
   background-repeat: no-repeat;
   background-size: 175px 170px;
   background-position: center;
+  background-color: #ec9b63;
 }
 
 button:hover {
